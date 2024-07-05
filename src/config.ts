@@ -1,0 +1,5 @@
+export const ETHERSCAN_API_KEY="QJ4UTD1RDZ64DP9G5NMVTCU88H8VYYQQJX"; //
+export const BSCSCAN_API_KEY="ZBCM6GT4DBMZ2JIZMQ73BY5W9KK29ED7FS"; //
+export const COVALENT_API_KEY="cqt_rQt66YJXqqpF9xT8cPcCV4FXH4Bd"; //required for AVAX & BSC
+export const UTXO_API_KEY="570d3a3f8e7d97a987f559a6498839309519b934"; //required for BTC, LTC, DOGE & BCH
+export const WALLET_CONNECT_PROJECT_ID="c6c9bacd35afa3eb9e6cccf6d8464395"; //optional for Trezor config

@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.dark ::-webkit-scrollbar {
+  width: 8px;
+}
+.dark ::-webkit-scrollbar-track {
+  background-color: #00000000;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #0000005e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #041431;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #3e3e55;
+  border-radius: 4px;
+}
+
+.tokens::-webkit-scrollbar {
+  width: 8px;
+}
+.tokens::-webkit-scrollbar-track {
+  background-color: #ffffff00;
+}
+.tokens::-webkit-scrollbar-thumb {
+  background-color: #363649;
+  border-radius: 4px;
+}
+
+.dark .tokens::-webkit-scrollbar {
+  width: 8px;
+}
+.dark .tokens::-webkit-scrollbar-track {
+  background-color: #ffffff00;
+}
+.dark .tokens::-webkit-scrollbar-thumb {
+  background-color: #00000034;
+  border-radius: 4px;
+}
+
+@keyframes flip {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+.arrow-rotate:hover{
+  animation: flip 0.2s linear 1;
+}
+
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 0.7s linear infinite;
+}
