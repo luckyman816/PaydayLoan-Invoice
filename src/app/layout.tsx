@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import React from 'react';
+import React from "react";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/layout";
@@ -38,9 +38,7 @@ export default function RootLayout({
       <body className={inter.className} suppressHydrationWarning={true}>
         <JotaiProvider>
           <Providers>
-            <Layout>
-              {children}
-            </Layout>
+            <Layout>{children}</Layout>
           </Providers>
         </JotaiProvider>
       </body>

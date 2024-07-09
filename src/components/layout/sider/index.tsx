@@ -55,9 +55,7 @@ const Sider = () => {
         <ul className="text-white text-md mt-5">
           { _renderLinkItem("Home", "/images/home.png", "/") }
           { _renderLinkItem("Add User", "/images/add-user.png", "/addUser") }
-          { _renderLinkItem("User Management", "/images/teamwork.png", "/userManagement") }
-          { _renderLinkItem("Create Invoice", "/images/payment.png", "/createInvoice") }
-          { _renderLinkItem("More", "/images/plus.png", "/more") }
+          { _renderLinkItem("Create Invoice", "/images/payment.png", "/createApplication") }
         
         </ul>
 

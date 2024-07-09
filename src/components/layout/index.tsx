@@ -17,10 +17,9 @@ const Header = dynamic(() => import("@/components/layout/header"), {
 
 const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
-    <div className="p-4 bg-[url('/images/bg-light.svg')] dark:bg-[url('/images/bg-dark.svg')] bg-[#F7F7FB] dark:bg-[#030303] bg-cover bg-no-repeat w-[100vw] h-[100vh] fixed overflow-y-auto">
+    <div className="p-4 bg-[url('/images/bg-light.svg')] dark:bg-[url('/images/assets/bg.png')] bg-[#F7F7FB] dark:bg-[#030303] bg-cover bg-no-repeat w-[100vw] h-[100vh] fixed overflow-y-auto">
       <Header />
       <div className="flex mt-2 flex-col md:flex-row">
-        <Sider />
         {children}
       </div>
     </div>

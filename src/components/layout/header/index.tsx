@@ -120,14 +120,28 @@ const Header = () => {
       </Dropdown.Item>
     </Dropdown>
   );
-
+  const handleNavigate = (url: string) => {
+    router.push(url);
+  }
+  const _renderLinkItem = (_name: string, _url: string) => (
+    <div onClick={() => handleNavigate(_url)}>
+      { _name }
+    </div>
+  )
   const { theme } = useTheme();
   return (
     <div className="bg-white dark:bg-black border-[#e2e2e2] dark:border-[#1c1c1c] border rounded-2xl p-4 px-8">
       <div className="flex justify-between items-center">
         <div className="flex justify-center items-center gap-2">
           <Image src={DueDate} width={50} height={50} alt={"logo"}/>
-          <div className="text-white text-xl">Payday Loan</div>
+          <div className="text-white text-2xl">Payday Loan</div>
+        </div>
+        <div className="flex justify-center items-center gap-10">
+          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Home", "/")}</div>
+          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Employers", "/")}</div>
+          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Users", "/")}</div>
+          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Roadmap", "/")}</div>
+          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Whitepaper", "/")}</div>
         </div>
         <div
           className="flex xs:hidden items-center justify-center cursor-pointer"
