@@ -14,7 +14,7 @@ const Login = () => {
           placeholder="Enter Your Password"
         />
         <div className="flex justify-center items-center w-full">
-          <button className="bg-gradient-to-r from-[#628EFF] to-[#580475] rounded-[20px] text-[white] w-[100%] h-[4vh]  hover:bg-[#0F977E]">
+          <button className="bg-gradient-to-r from-[#628EFF] to-[#580475] rounded-[10px] text-[white] w-[100%] h-[5vh]  hover:bg-[#0F977E]">
             Login
           </button>
         </div>
@@ -22,6 +22,13 @@ const Login = () => {
             <div className="border-b border-[grey] w-[8vw]"></div>
             <div className="text-[grey]">Or</div>
             <div className="border-b border-[grey] w-[8vw]"></div>
+        </div>
+        <div className="flex justify-center w-[100%]">
+          <div className="flex flex-row justify-between w-[120px]">
+            <img src="/images/third-party/devicon_google.png" alt="Google" className="w-[30px] h-[30px]  hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
+            <img src="/images/third-party/logos_facebook.png" alt="Facebook" className="w-[30px] h-[30px] hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
+            <img src="/images/third-party/devicon_google.png" alt="Google" className="w-[30px] h-[30px] hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
+          </div>
         </div>
       </div>
     </div>
