@@ -123,8 +123,9 @@ const Header = () => {
   const handleNavigate = (url: string) => {
     router.push(url);
   }
-  const _renderLinkItem = (_name: string, _url: string) => (
-    <div onClick={() => handleNavigate(_url)}>
+  const _renderLinkItem = (_name: string,_image: string, _url: string) => (
+    <div onClick={() => handleNavigate(_url)} className="flex justify-center items-center gap-2">
+      <Image src={"/images/navbar/" + _image + ".png"} alt="" width={30} height={30}/>
       { _name }
     </div>
   )
@@ -137,11 +138,11 @@ const Header = () => {
           <div className="text-white text-2xl">Payday Loan</div>
         </div>
         <div className="flex justify-center items-center gap-10">
-          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Home", "/")}</div>
-          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Employers", "/")}</div>
-          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Users", "/users")}</div>
-          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Roadmap", "/")}</div>
-          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Whitepaper", "/")}</div>
+          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Home","home-button", "/")}</div>
+          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Employers","computer-worker", "/")}</div>
+          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Users","user", "/users")}</div>
+          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Roadmap","milestone", "/")}</div>
+          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Whitepaper","whitepaper", "/")}</div>
         </div>
         <div
           className="flex xs:hidden items-center justify-center cursor-pointer"
