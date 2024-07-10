@@ -26,6 +26,7 @@
     "@xchainjs/xchain-litecoin": "^0.13.9",
     "@xchainjs/xchain-mayachain": "^1.0.0",
     "@xchainjs/xchain-thorchain": "^1.0.3",
+    "antd": "^5.19.1",
     "downloadjs": "^1.4.7",
     "flowbite-react": "^0.7.2",
     "fs": "^0.0.1-security",
@@ -36,6 +37,7 @@
     "npm": "^10.4.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-paginate": "^8.2.0",
     "react-qr-code": "^2.0.12",
     "react-toastify": "^10.0.4"
   },
