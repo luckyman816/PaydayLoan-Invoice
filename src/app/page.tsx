@@ -7,6 +7,9 @@ const Home = () => {
   const handleStart = () => {
     router.push("/login");
   }
+  const handleSignup = () => {
+    router.push("/register");
+  }
   return (
     <div className="flex-grow flex justify-center items-start w-[100vw] h-[100vh] pt-[10%]">
       <div className="flex flex-col gap-4 justify-center items-center">
@@ -25,7 +28,7 @@ const Home = () => {
           <button className="bg-[#1C64F1] rounded-[20px] text-white w-[8vw] h-[4vh] border border-[white] hover:bg-[#0F977E]" onClick={handleStart}>
             Get Started
           </button>
-          <button className="bg-[#8BA2F9] rounded-[20px] text-[white] w-[8vw] h-[4vh] border border-[white] hover:bg-[#0F977E]">
+          <button className="bg-[#8BA2F9] rounded-[20px] text-[white] w-[8vw] h-[4vh] border border-[white] hover:bg-[#0F977E]" onClick={handleSignup}>
             Register
           </button>
         </div>
