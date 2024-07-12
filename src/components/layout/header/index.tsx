@@ -139,8 +139,9 @@ const Header = () => {
         </div>
         <div className="flex justify-center items-center gap-10">
           <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Home","home-button", "/")}</div>
-          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Employers","user", "/employers")}</div>
-          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Users","computer-worker", "/users")}</div>
+          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Employers","employment", "/employers")}</div>
+          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Users","user", "/users")}</div>
+          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("For Lenders","debt", "/forLenders")}</div>
           <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Roadmap","milestone", "/")}</div>
           <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Whitepaper","whitepaper", "/")}</div>
         </div>
