@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 import DynamicTable from "@/components/DynamicTable";
 import Image from "next/image";
