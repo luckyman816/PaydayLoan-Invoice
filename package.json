@@ -39,7 +39,8 @@
     "react-dom": "^18",
     "react-paginate": "^8.2.0",
     "react-qr-code": "^2.0.12",
-    "react-toastify": "^10.0.4"
+    "react-toastify": "^10.0.4",
+    "tw-elements-react": "^1.0.0-alpha-end"
   },
   "devDependencies": {
     "@types/node": "^20",
