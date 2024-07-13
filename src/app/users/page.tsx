@@ -8,7 +8,7 @@ const Page = () => {
   const [pageNum, setPageNum] = useState(0);
   return (
     <div className="flex flex-row mt-10 w-full">
-      <div className="w-1/5">
+      <div className="w-1/5"> 
         <div className="dark:bg-gradient-to-tr dark:from-[#FF6A00] dark:via-[#10152E] dark:to-[#F81969] p-[1px] rounded-2xl h-[70vh]">
           <div className="bg-white dark:bg-black rounded-2xl p-6 w-full h-full">
             <div className="flex flex-row justify-start items-center text-white text-2xl">
