@@ -51,6 +51,7 @@ const TrackRepayments = () => {
                             <th className='p-3'>Employer Name</th>
                             <th className='p-3'>Employer Address</th>
                             <th className='p-3'>Repayment Status</th>
+                            <th className='p-3'>Loan Amount</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -61,11 +62,12 @@ const TrackRepayments = () => {
                                 <td className='p-3'>{item}</td>
                                 <td className='p-3'>{item}</td>
                                 <td className='p-3'>{item}</td>
+                                <td className='p-3'>{item}</td>
                             </tr>
                         ))}
                     </tbody>
                     <tfoot className=' sticky bottom-[-1px]  bg-black shadow-[0_0_2px_1px_rgba(89,200,255,0.8)]'>
-                        <tr className=''><td className='p-3' colSpan={5}>asdf</td></tr>
+                        <tr className=''><td className='p-3' colSpan={6}>asdf</td></tr>
                     </tfoot>
                 </table>
             </div>

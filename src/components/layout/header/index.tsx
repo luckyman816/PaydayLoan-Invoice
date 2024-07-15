@@ -16,7 +16,7 @@ import {
   chainListAtom,
 } from "@/store";
 //router
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 //types
 import { ChainType, IWallet } from "@/types/minis";
 //data
@@ -25,6 +25,8 @@ import { reduceAmount } from "@/utils/methods";
 
 const Header = () => {
   const router = useRouter();
+  const path = usePathname();
+  console.log(path);
 
   const [chainList] = useAtom(chainListAtom);
   //chains that is selected at this moment
@@ -61,12 +63,12 @@ const Header = () => {
   const handleConnectWallet = () => {
     setStage("wallet");
     setCurrentModalType("");
-    router.push("/");
+    router.push("/my-wallet");
   };
 
   const _profileButton = () => (
     <div className="cursor-pointer flex gap-2 items-center justify-center rounded-full px-5 py-2 text-4 w-full bg-white dark:bg-black dark:text-white text-black dark:hover:text-[#ccc] hover:text-[#ccc]">
-      <div>Wallet:</div>
+      <div>Wallet:</div> 
       <Image
         className="cursor-pointer rounded-full"
         src={
@@ -122,28 +124,82 @@ const Header = () => {
   );
   const handleNavigate = (url: string) => {
     router.push(url);
-  }
-  const _renderLinkItem = (_name: string,_image: string, _url: string) => (
-    <div onClick={() => handleNavigate(_url)} className="flex justify-center items-center gap-2">
-      <Image src={"/images/navbar/" + _image + ".png"} alt="" width={30} height={30}/>
-      { _name }
+  };
+  const _renderLinkItem = (_name: string, _image: string, _url: string) => (
+    <div
+      onClick={() => handleNavigate(_url)}
+      className="flex justify-center items-center gap-2"
+    >
+      <Image
+        src={"/images/navbar/" + _image + ".png"}
+        alt=""
+        width={30}
+        height={30}
+        // className="xsmall-screen-none"
+      />
+      <div className="medium-screen-none">{_name}</div>
     </div>
-  )
+  );
   const { theme } = useTheme();
   return (
-    <div className="bg-white dark:bg-black border-[#e2e2e2] dark:border-[#1c1c1c] border rounded-2xl p-4 px-8">
+    <div className="bg-white dark:bg-black border-[#e2e2e2] dark:border-[#1c1c1c] border rounded-2xl p-4 px-8 w-[97vw] fixed z-50">
+      
       <div className="flex justify-between items-center">
         <div className="flex justify-center items-center gap-2">
-          <Image src={DueDate} width={50} height={50} alt={"logo"}/>
+          <Image src={DueDate} width={50} height={50} alt={"logo"} />
           <div className="text-white text-2xl">Payday Loan</div>
         </div>
         <div className="flex justify-center items-center gap-10">
-          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Home","home-button", "/")}</div>
-          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Employers","employment", "/employers")}</div>
-          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Users","user", "/users")}</div>
-          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("For Lenders","debt", "/forLenders")}</div>
-          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Roadmap","milestone", "/")}</div>
-          <div className="text-white text-xl hover:border-b-2 border-white cursor-pointer">{_renderLinkItem("Whitepaper","whitepaper", "/")}</div>
+          <div
+            className={`text-white text-xl ${
+              path == "/" ? `border-b-2 border-[rgba(89,200,255,0.8)]` : ``
+            } hover:border-b-2 border-white cursor-pointer `}
+          >
+            {_renderLinkItem("Home", "home-button", "/")}
+          </div>
+          <div
+            className={`text-white text-xl ${
+              path == "/employers"
+                ? `border-b-2 border-[rgba(89,200,255,0.8)]`
+                : ``
+            } hover:border-b-2 border-white cursor-pointer`}
+          >
+            {_renderLinkItem("Employers", "employment", "/employers")}
+          </div>
+          <div
+            className={`text-white text-xl ${
+              path == "/users" ? `border-b-2 border-[rgba(89,200,255,0.8)]` : ``
+            } hover:border-b-2 border-white cursor-pointer`}
+          >
+            {_renderLinkItem("Users", "user", "/users")}
+          </div>
+          <div
+            className={`text-white text-xl ${
+              path == "/forLenders"
+                ? `border-b-2 border-[rgba(89,200,255,0.8)]`
+                : ``
+            } hover:border-b-2 border-white cursor-pointer`}
+          >
+            {_renderLinkItem("For Lenders", "debt", "/forLenders")}
+          </div>
+          <div
+            className={`text-white text-xl ${
+              path == "/milestone"
+                ? `border-b-2 border-[rgba(89,200,255,0.8)]`
+                : ``
+            } hover:border-b-2 border-white cursor-pointer`}
+          >
+            {_renderLinkItem("Roadmap", "milestone", "/")}
+          </div>
+          <div
+            className={`text-white text-xl ${
+              path == "/whitepaper"
+                ? `border-b-2 border-[rgba(89,200,255,0.8)]`
+                : ``
+            } hover:border-b-2 border-white cursor-pointer`}
+          >
+            {_renderLinkItem("Whitepaper", "whitepaper", "/")}
+          </div>
         </div>
         <div
           className="flex xs:hidden items-center justify-center cursor-pointer"
@@ -175,6 +231,29 @@ const Header = () => {
             )}
           </div>
         </div>
+        <button
+        data-collapse-toggle="navbar-default"
+        type="button"
+        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg large-screen-none hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default"
+        aria-expanded="false"
+      >
+        <span className="sr-only">Open main menu</span>
+        <svg
+          className="w-5 h-5"
+          aria-hidden="true"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
       </div>
       <div
         className={`mt-5 w-full inline-block xs:hidden ${!visible && "hidden"}`}

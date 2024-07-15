@@ -10,6 +10,7 @@ const FIELD = [
   "Monthly net salary",
   "Employer name",
   "Monthly installments",
+  "Toatl Amount",
 ];
 
 const Dashboard = () => {
@@ -68,6 +69,7 @@ const Dashboard = () => {
                 className={index % 2 ? "bg-[rgba(255,255,255,0.02)]" : ""}
                 key={index}
               >
+                <td className="text-center p-3 text-[#DDD]">{item}</td>
                 <td className="text-center p-3 text-[#DDD]">{item}</td>
                 <td className="text-center p-3 text-[#DDD]">{item}</td>
                 <td className="text-center p-3 text-[#DDD]">{item}</td>

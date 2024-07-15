@@ -19,7 +19,7 @@ const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
     <div className="p-4 bg-[url('/images/bg-light.svg')] dark:bg-[url('/images/assets/bg.png')] bg-[#F7F7FB] dark:bg-[#030303] bg-cover bg-no-repeat w-[100vw] h-[100vh] fixed overflow-y-auto">
       <Header />
-      <div className="flex mt-2 flex-col md:flex-row">
+      <div className="flex mt-[8vh] flex-col md:flex-row">
         {children}
       </div>
     </div>
