@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const Register = () => {
     return (
       <div className="flex-grow flex justify-center w-[100vw] h-[80vh] items-center gap-8 ">
@@ -40,7 +41,7 @@ const Register = () => {
           <div className="flex flex-row justify-between w-[120px]">
             <img src="/images/third-party/devicon_google.png" alt="Google" className="w-[30px] h-[30px] hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
             <img src="/images/third-party/logos_facebook.png" alt="Facebook" className="w-[30px] h-[30px] hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
-            <img src="/images/third-party/devicon_google.png" alt="Google" className="w-[30px] h-[30px] hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
+            <img src="/images/third-party/logos_twitter.png" alt="Google" className="w-[30px] h-[30px] hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
           </div>
         </div>
         </div>

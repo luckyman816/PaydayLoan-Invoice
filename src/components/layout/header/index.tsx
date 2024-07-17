@@ -128,16 +128,31 @@ const Header = () => {
   const _renderLinkItem = (_name: string, _image: string, _url: string) => (
     <div
       onClick={() => handleNavigate(_url)}
-      className="flex justify-center items-center gap-2"
+      className="hidden 2xl:flex justify-center items-center gap-2"
     >
       <Image
         src={"/images/navbar/" + _image + ".png"}
         alt=""
         width={30}
         height={30}
-        className="xsmall-screen-none"
+        className="xsmall-screen-none "
       />
       <div className="medium-screen-none">{_name}</div>
+    </div>
+  );
+  const _renderLinkItemDropdown = (_name: string, _image: string, _url: string) => (
+    <div
+      onClick={() => {handleNavigate(_url);setVisible((prev) => !prev); }}
+      className="flex gap-2"
+    >
+      <Image
+        src={"/images/navbar/" + _image + ".png"}
+        alt=""
+        width={30}
+        height={30}
+        
+      />
+      <div>{_name}</div>
     </div>
   );
   const { theme } = useTheme();
@@ -204,7 +219,7 @@ const Header = () => {
           </div>
         </div>
         <div
-          className="flex xs:hidden items-center justify-center cursor-pointer"
+          className="flex 2xl:hidden items-center justify-center cursor-pointer"
           onClick={handleToggle}
         >
           <Icon
@@ -213,7 +228,7 @@ const Header = () => {
             height={30}
           />
         </div>
-        <div className={`items-center hidden lg:flex lg:w-auto`}>
+        <div className={`items-center hidden 2xl:flex 2xl:w-auto`}>
           <div className="rounded-full p-[1px] bg-gradient-to-r w-full from-[#2B66F6] to-[#4CA7F8]">
             {!curBalance ? (
               <button
@@ -258,10 +273,65 @@ const Header = () => {
         </svg>
       </button> */}
       </div>
+
+
+
       <div
         className={`mt-5 w-full inline-block lg:hidden ${!visible && "hidden"}`}
       >
-        <div className="rounded-full p-[1px] bg-gradient-to-r w-full from-[#2B66F6] to-[#4CA7F8]">
+        <div className="flex flex-col gap-5">
+          <div
+            className={`text-white text-xl ${
+              path == "/" ? `border-none` : ``
+            } hover:border-b-2 border-white cursor-pointer `}
+          >
+            {_renderLinkItemDropdown("Home", "home-button", "/")}
+          </div>
+          <div
+            className={`text-white text-xl ${
+              path == "/employers"
+                ? `border-none`
+                : ``
+            } hover:border-b-2 border-white cursor-pointer`}
+          >
+            {_renderLinkItemDropdown("Employers", "employment", "/employers")}
+          </div>
+          <div
+            className={`text-white text-xl ${
+              path == "/users" ? `border-none` : ``
+            } hover:border-b-2 border-white cursor-pointer`}
+          >
+            {_renderLinkItemDropdown("Users", "user", "/users")}
+          </div>
+          <div
+            className={`text-white text-xl ${
+              path == "/forLenders"
+                ? `border-none`
+                : ``
+            } hover:border-b-2 border-white cursor-pointer`}
+          >
+            {_renderLinkItemDropdown("For Lenders", "debt", "/forLenders")}
+          </div>
+          <div
+            className={`text-white text-xl ${
+              path == "/milestone"
+                ? `border-none`
+                : ``
+            } hover:border-b-2 border-white cursor-pointer`}
+          >
+            {_renderLinkItemDropdown("Roadmap", "milestone", "/")}
+          </div>
+          <div
+            className={`text-white text-xl ${
+              path == "/whitepaper"
+                ? `border-none`
+                : ``
+            } hover:border-b-2 border-white cursor-pointer`}
+          >
+            {_renderLinkItemDropdown("Whitepaper", "whitepaper", "/")}
+          </div>
+        </div>
+        <div className="rounded-full mt-4 p-[1px] bg-gradient-to-r w-full from-[#2B66F6] to-[#4CA7F8]">
           {!curBalance ? (
             <button
               onClick={handleConnectWallet}
