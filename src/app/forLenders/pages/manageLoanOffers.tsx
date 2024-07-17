@@ -44,9 +44,8 @@ const ManageLoanOffers = () => {
                     <div className=' text-right w-1/4'>
                         {/* <label className='w-full'>Repayment Period </label> */}
                     </div>
-                    <div className=' w-2/4 flex flex-row justify-between items-center'>
+                    <div className=' w-2/4 flex flex-row justify-center items-center'>
                         <button className='w-[200px] dark:bg-gradient-to-tr  dark:from-[#FF6A00] dark:via-[#10152E] dark:to-[#6456b1] p-[1px] rounded-2xl'><div className='bg-white dark:bg-black transition-all hover:dark:bg-[#2a5bc413] text-white rounded-2xl px-6 p-3 w-full'>Apply</div></button>
-                        <button className='w-[200px] dark:bg-gradient-to-tr  dark:from-[#FF6A00] dark:via-[#10152E] dark:to-[#F81969] p-[1px] rounded-2xl'><div className='bg-white dark:bg-black hover:dark:bg-[#d4d4d41c] text-white rounded-2xl px-6 p-3 w-full'>Reset</div></button>
                     </div>
                     <div className='text-left w-1/4'>
                         {/* <label className='w-full'>&nbsp;Day</label> */}

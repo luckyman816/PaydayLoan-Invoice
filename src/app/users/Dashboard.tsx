@@ -3,14 +3,14 @@ import React, { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
 
 const FIELD = [
+  "Employer name",
+  "User name",
   "Loan amount",
   "Interest rate",
   "Repayment period",
-  "User name",
   "Monthly net salary",
-  "Employer name",
   "Monthly installments",
-  "Toatl Amount",
+  "Total Amount",
 ];
 
 const Dashboard = () => {
@@ -56,9 +56,9 @@ const Dashboard = () => {
           <table className="bg-[rgba(0,0,0,0.7)] w-full relative">
             <thead className="sticky top-0 w-full border-none bg-[#103028]">
               {FIELD.map((item, index) => (
-              <td className="text-center p-3 text-[#DDD] bg-[#103028]" key={index}>
+              <th className="text-center p-3 text-[#DDD] bg-[#103028]" key={index}>
                 {item}
-              </td>
+              </th>
             ))}
             </thead>
             <tbody>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const Login = () => {
   return (
     <div className="flex-grow flex justify-center w-[100vw] h-[80vh] items-center gap-8 ">
