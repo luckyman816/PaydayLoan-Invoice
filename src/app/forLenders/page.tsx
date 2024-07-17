@@ -29,7 +29,7 @@ const Lenders = () => {
           <img
             src={"/images/navbar/debt.png"}
             alt={"logo"}
-            className=" absolute bottom-[15%] left-[50%] translate-x-[-50%] w-[80%]"
+            className=" absolute bottom-[15%] left-[50%] translate-x-[-50%] w-[80%] small-screen-img"
           />
           <div className="bg-white dark:bg-black rounded-2xl p-6 w-full h-full xxsmall-screen-padding-none">
             <div className="flex flex-row justify-start items-center small-screen-col text-white text-2xl xxsmall-screen-padding-none">

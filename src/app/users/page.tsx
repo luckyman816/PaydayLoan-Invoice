@@ -61,7 +61,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="w-4/5 text-white">
+      <div className="w-4/5 small-screen-context text-white">
         <div className="px-5 w-full">
           <Banner />
           {page === 1 ? <Dashboard /> : <Creator />}

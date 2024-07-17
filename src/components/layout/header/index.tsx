@@ -135,12 +135,14 @@ const Header = () => {
         alt=""
         width={30}
         height={30}
-        // className="xsmall-screen-none"
+        className="xsmall-screen-none"
       />
       <div className="medium-screen-none">{_name}</div>
     </div>
   );
   const { theme } = useTheme();
+
+
   return (
     <div className="bg-white dark:bg-black border-[#e2e2e2] dark:border-[#1c1c1c] border rounded-2xl p-4 px-8 w-[97vw] fixed z-50">
       
@@ -211,7 +213,7 @@ const Header = () => {
             height={30}
           />
         </div>
-        <div className={`items-center hidden xs:flex xs:w-auto`}>
+        <div className={`items-center hidden lg:flex lg:w-auto`}>
           <div className="rounded-full p-[1px] bg-gradient-to-r w-full from-[#2B66F6] to-[#4CA7F8]">
             {!curBalance ? (
               <button
@@ -231,12 +233,13 @@ const Header = () => {
             )}
           </div>
         </div>
-        <button
+        {/* <button
         data-collapse-toggle="navbar-default"
         type="button"
         className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg large-screen-none hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-controls="navbar-default"
         aria-expanded="false"
+        // onClick={handleDropdown}
       >
         <span className="sr-only">Open main menu</span>
         <svg
@@ -253,10 +256,10 @@ const Header = () => {
             d="M1 1h15M1 7h15M1 13h15"
           />
         </svg>
-      </button>
+      </button> */}
       </div>
       <div
-        className={`mt-5 w-full inline-block xs:hidden ${!visible && "hidden"}`}
+        className={`mt-5 w-full inline-block lg:hidden ${!visible && "hidden"}`}
       >
         <div className="rounded-full p-[1px] bg-gradient-to-r w-full from-[#2B66F6] to-[#4CA7F8]">
           {!curBalance ? (

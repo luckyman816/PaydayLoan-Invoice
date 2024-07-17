@@ -33,7 +33,7 @@ const Dashboard = () => {
   return (
     <div className="w-full px-5  relative">
       <div className="w-full  ">
-        <div className="flex flex-row justify-between p-3">
+        <div className="flex flex-row justify-between xxsmall-screen-col p-3">
           <div>
             <select className="text-white rounded-lg bg-transparent border border-[#777]">
               <option className="bg-[#030303] p-9">5</option>
@@ -51,18 +51,16 @@ const Dashboard = () => {
             />
           </div>
         </div>
-        <div className=" w-full border border-transparent border-b-[rgba(255,255,255,0.2)] bg-[rgba(113,214,189,0.2)]">
-          <div className="flex flex-row justify-space w-full">
-            {FIELD.map((item, index) => (
-              <div className="text-center p-3 text-[#DDD] w-[14%]" key={index}>
+       
+        <div className="h-[490px] overflow-y-scroll">
+          <table className="bg-[rgba(0,0,0,0.7)] w-full relative">
+            <thead className="sticky top-0 w-full border-none bg-[#103028]">
+              {FIELD.map((item, index) => (
+              <td className="text-center p-3 text-[#DDD] bg-[#103028]" key={index}>
                 {item}
-              </div>
+              </td>
             ))}
-          </div>
-        </div>
-        <div className="h-96 overflow-y-scroll">
-          <table className="bg-[rgba(0,0,0,0.7)] w-full">
-            <thead></thead>
+            </thead>
             <tbody>
             {currentItems.map((item, index) => (
               <tr

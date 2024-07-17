@@ -24,7 +24,7 @@ const Report = () => {
             <div className="   right-6 bottom-4 font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text text-2xl">
               Report
             </div>
-            <div className="flex flex-row w-full justify-between items-center">
+            <div className="flex flex-row w-full justify-between items-center xxsmall-screen-col">
               <div>
                 <select className="bg-transparent rounded-lg ring-0 outline-none focus:right-0">
                   <option value="1" className=" bg-black p-2">
