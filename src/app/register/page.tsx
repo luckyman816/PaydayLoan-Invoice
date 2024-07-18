@@ -21,7 +21,7 @@ const Register = () => {
           placeholder="Email"
         />
         <select className="bg-transparent rounded-[8px] text-[white] w-[20vw] outline-none">
-          <option value="User" className=" bg-black p-2 h-8">
+          <option value="User" className=" bg-black p-2">
             User
           </option>
           <option value="Empolyer" className=" bg-black">

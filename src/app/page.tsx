@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
@@ -32,10 +33,7 @@ const Home = () => {
             Register
           </button>
         </div>
-        <div className="flex justify-center items-center w-[100%] mt-14 text-zinc-400 text-xl">
-            <div className="m-[0px_15px]">
-            Communiy: 
-            </div>
+        <div className="flex justify-center items-center w-[100%] mt-20 text-zinc-400 text-xl">
           <div className="flex flex-row justify-between gap-3">
             <img src="/images/community/facebook.png" alt="Facebook" className="w-[40px] h-[40px] hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
             <img src="/images/community/telegram.png" alt="Google" className="w-[40px] h-[40px] hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
