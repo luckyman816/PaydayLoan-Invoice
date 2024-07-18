@@ -55,9 +55,9 @@ const Dashboard = () => {
        
         <div className="h-[490px] overflow-y-scroll">
           <table className="bg-[rgba(0,0,0,0.7)] w-full relative">
-            <thead className="sticky top-0 w-full border-none bg-[#103028]">
+            <thead className="sticky top-0 w-full border-none bg-[#103028] text-base" style={{ fontFamily:"medium"}}>
               {FIELD.map((item, index) => (
-              <th className="text-center p-3 text-[#DDD] bg-[#103028]" key={index}>
+              <th className="text-center p-5 text-[#DDD] bg-[#103028]" key={index}>
                 {item}
               </th>
             ))}

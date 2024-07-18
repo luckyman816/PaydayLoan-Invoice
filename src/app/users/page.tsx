@@ -26,7 +26,7 @@ const Page = () => {
                 className="xxsmall-screen-margin-top w-[30px] "
               />
               <div className="small-screen-none">&nbsp;</div>
-              <div className="small-screen-text xxsmall-screen-margin-bottom">Users</div>
+              <div className="small-screen-text xxsmall-screen-margin-bottom" style={{ fontFamily:"medium"}}>Users</div>
             </div>
             <ul className="text-white text-md mt-5">
               <li className="m-[20px_5px]" onClick={() => setPageNum(1)}>
@@ -39,7 +39,7 @@ const Page = () => {
                       alt={"logo"}
                       className="w-[30px] h-[30px]"
                     />
-                    <div className="small-screen-text">Dashboard</div>
+                    <div className="small-screen-text" style={{ fontFamily:"medium"}}>Dashboard</div>
                   </div>
                 </div>
               </li>
@@ -53,7 +53,7 @@ const Page = () => {
                       alt={"logo"}
                       className="w-[30px] h-[30px]"
                     />
-                    <div className="small-screen-text text-center">Initiate Loan Request</div>
+                    <div className="small-screen-text text-center" style={{ fontFamily:"medium"}}>Initiate Loan Request</div>
                   </div>
                 </div>
               </li>

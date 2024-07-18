@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+"use client"
+
 import React, {useState, useEffect} from 'react';
 import ReactPaginate from "react-paginate";
 const TrackRepayments = () => {
@@ -18,7 +20,7 @@ const TrackRepayments = () => {
       indexOfLastItem
     );
     return (
-        <div className='mt-8 flex flex-col gap-3 w-full'>
+        <div className='mt-8 flex flex-col gap-3 w-full' style={{ fontFamily:"medium"}}>
             <div className="   right-6 bottom-4 font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text text-2xl">
             Track Repayments
             </div>

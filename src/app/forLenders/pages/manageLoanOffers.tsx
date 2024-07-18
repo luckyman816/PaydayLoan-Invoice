@@ -1,8 +1,10 @@
+"use client"
+
 import React from 'react';
 import Input from 'antd/es/input/Input';
 const ManageLoanOffers = () => {
     return (
-        <div className='mt-8 flex flex-col gap-3 w-full'>
+        <div className='mt-8 flex flex-col gap-3 w-full' style={{ fontFamily:"medium"}}>
             <div className="   right-6 bottom-4 font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text text-2xl">
             Monitor Loan Distursements
             </div>

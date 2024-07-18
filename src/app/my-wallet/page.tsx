@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { Spin } from "antd";
 import Spinner from "@/components/Spinner";

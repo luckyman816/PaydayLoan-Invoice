@@ -24,7 +24,7 @@ const Lenders = () => {
     }
   };
   return (
-    <div className="flex flex-row mt-10 w-full gap-5">
+    <div className="flex flex-row mt-10 w-full gap-5" style={{ fontFamily:"medium"}}>
       <div className="w-1/5 small-screen-sidebar xxsmall-screen-sidebar">
         <div className=" relative dark:bg-gradient-to-tr dark:from-[#FF6A00] dark:via-[#10152E] dark:to-[#F81969] p-[1px] rounded-2xl h-[80vh]">
           <img

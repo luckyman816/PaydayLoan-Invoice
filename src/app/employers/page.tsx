@@ -29,7 +29,7 @@ const Employers = () => {
                 alt={"logo"}
               />
               <div className="small-screen-none">&nbsp;</div>
-              <div className="small-screen-text xxsmall-screen-margin-bottom">Employers</div>
+              <div className="small-screen-text xxsmall-screen-margin-bottom"  style={{ fontFamily:"poppins"}}>Employers</div>
             </div>
             <ul className="text-white text-base mt-5">
               <li className="m-[20px_5px]" onClick={() => setPage(1)}>
@@ -42,7 +42,7 @@ const Employers = () => {
                       alt={"logo"}
                       className="w-[30px] h-[30px]"
                     />
-                    <div className="small-screen-text">Dashboard</div>
+                    <div className="small-screen-text" style={{ fontFamily:"poppins"}}>Dashboard</div>
                   </div>
                 </div>
               </li>
@@ -56,7 +56,7 @@ const Employers = () => {
                       alt={"logo"}
                       className="w-[30px] h-[30px]"
                     />
-                    <div className="small-screen-text">Report</div>
+                    <div className="small-screen-text" style={{ fontFamily:"poppins"}}>Report</div>
                   </div>
                 </div>
               </li>

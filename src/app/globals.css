@@ -86,6 +86,28 @@
 }
 
 
+@font-face {
+  font-family: 'spicy';
+  src: url('./spicy.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'spicyBold';
+  src: url('./spicyBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'poppins';
+  src: url('./poppins.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'regular';
+  src: url('./regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'medium';
+  src: url('./medium.ttf') format('truetype');
+}
+
+
 body {
   color: rgb(var(--foreground-rgb));
 }

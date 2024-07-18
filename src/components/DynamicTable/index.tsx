@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Modal from "./modal";
 import tableData from "./data.json";
 
+
 interface TableRow {
   id: number;
   Users_Name: string;
@@ -32,29 +33,29 @@ const DynamicTable: React.FC = () => {
     <>
       <div className="bg-white dark:bg-black border-[#e2e2e2] dark:border-[#1c1c1c] border rounded-2xl p-4 px-8 h-[80vh] w-full">
         <div className="flex flex-col gap-3 h-full w-full pl-8 mt-14">
-          <div className=" right-6 bottom-4 font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text text-2xl">
+          <div className=" right-6 bottom-4 font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text text-2xl"  style={{ fontFamily:"poppins"}}>
             Dashboard
           </div>
           <div className=" w-full h-[80%] overflow-y-auto ">
             <table className="rounded-xl  border-none w-[95%]">
               <thead className="bg-black dark:bg-black sticky top-0 z-10 ">
-                <tr>
-                  <th className="px-6 py-7 text-left text-xs font-medium text-white uppercase tracking-wider">
+                <tr style={{ fontFamily:"spicy", fontSize:"16px"}}>
+                  <th className="px-6 py-6 text-left font-medium text-white uppercase tracking-wider">
                     ID
                   </th>
-                  <th className="px-6 py-7 text-left text-xs font-medium text-white uppercase tracking-wider">
+                  <th className="px-6 py-6 text-left font-medium text-white uppercase tracking-wider">
                     User's Name
                   </th>
-                  <th className="px-6 py-7 text-left text-xs font-medium text-white uppercase tracking-wider">
+                  <th className="px-6 py-6 text-left font-medium text-white uppercase tracking-wider">
                     Address
                   </th>
-                  <th className="px-6 py-7 text-left text-xs font-medium text-white uppercase tracking-wider">
+                  <th className="px-6 py-6 text-left font-medium text-white uppercase tracking-wider">
                     loan amount
                   </th>
-                  <th className="px-6 py-7 text-left text-xs font-medium text-white uppercase tracking-wider">
+                  <th className="px-6 py-6 text-left font-medium text-white uppercase tracking-wider">
                     Commitment Status
                   </th>
-                  <th className="px-6 py-7 text-left text-xs font-medium text-white uppercase tracking-wider max-w-2">
+                  <th className="px-6 py-6 text-left font-medium text-white uppercase tracking-wider max-w-2">
                     Loan Status
                   </th>
                 </tr>

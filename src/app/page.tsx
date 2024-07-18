@@ -32,6 +32,18 @@ const Home = () => {
             Register
           </button>
         </div>
+        <div className="flex justify-center items-center w-[100%] mt-14 text-zinc-400 text-xl">
+            <div className="m-[0px_15px]">
+            Communiy: 
+            </div>
+          <div className="flex flex-row justify-between gap-3">
+            <img src="/images/community/facebook.png" alt="Facebook" className="w-[40px] h-[40px] hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
+            <img src="/images/community/telegram.png" alt="Google" className="w-[40px] h-[40px] hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
+            <img src="/images/community/twitter.png" alt="Google" className="w-[40px] h-[40px] hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
+            <img src="/images/community/youtube.png" alt="Google" className="w-[40px] h-[40px] hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
+            <img src="/images/community/discord.png" alt="Google" className="w-[40px] h-[40px] hover:cursor-pointer hover:scale-[1.15] transition duration-100" />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import React from "react";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import "./font.css";
 import Layout from "@/components/layout";
 import { Provider as JotaiProvider } from "jotai";
 import Providers from "@/utils/Providers";

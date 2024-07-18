@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+"use client"
 import React, { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
 const Report = () => {
@@ -22,7 +23,7 @@ const Report = () => {
       <div className="mt-7 flex flex-col gap-5">
         <div className="text-white border-white cursor-pointer pl-8 pr-5">
           <div className="mt-8 flex flex-col gap-3 w-full">
-            <div className="   right-6 bottom-4 font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text text-2xl">
+            <div className="   right-6 bottom-4 font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text text-2xl" style={{ fontFamily:"medium"}} >
               Report
             </div>
             <div className="flex flex-row w-full justify-between items-center xxsmall-screen-col">
@@ -57,7 +58,7 @@ const Report = () => {
             <div className="w-full h-[50vh] overflow-y-auto">
               <table className=" w-full ">
                 <thead className=" sticky top-0  w-full bg-black shadow-[0_0_2px_1px_rgba(89,200,255,0.8)]">
-                  <tr className=" text-left ">
+                  <tr className=" text-left " style={{ fontFamily:"medium", fontSize:"16px"}}>
                     <th className="p-3">User Name</th>
                     <th className="p-3">User Address</th>
                     <th className="p-3">Employer Name</th>
