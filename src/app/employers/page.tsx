@@ -5,6 +5,7 @@ import Image from "next/image";
 import DynamicTable from "@/components/DynamicTable";
 
 import Report from "./Report";
+import Manage from "./manage";
 
 const Employers = () => {
   const [page, setPage] = useState<number>(1);
@@ -60,13 +61,27 @@ const Employers = () => {
                   </div>
                 </div>
               </li>
+              <li className="m-[20px_5px]" onClick={() => setPage(3)}>
+                <div className="rounded-2xl p-[1px] cursor-pointer transition-all hover:bg-gradient-to-tr hover:scale-[1.04]  hover:to-[#295e55] hover:via-[#3c54cf]">
+                  <div className={`bg-white dark:bg-black rounded-2xl p-3 pl-5 w-full h-full hover:opacity-80 flex justify-start small-screen-col xxsmall-screen-padding-none items-center gap-3 ${page==3?`border-b-2 border-[rgba(89,200,255,0.8)]`:``}`}>
+                    <img
+                      src={"/images/sidebar/managers.png"}
+                      // width={25}
+                      // height={25}
+                      alt={"logo"}
+                      className="w-[30px] h-[30px]"
+                    />
+                    <div className="small-screen-text" style={{ fontFamily:"poppins"}}>Employer Management</div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
       </div>
       <div className="w-4/5">
         
-        {page == 1 ? <DynamicTable /> : <Report />}
+        {page == 1 ? <DynamicTable /> : (page == 2 ? <Report /> : <Manage />)}
        
       </div>
     </div>

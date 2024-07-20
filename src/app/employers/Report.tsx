@@ -2,6 +2,8 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
+
+import reportData from "./report.json";
 const Report = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const itemsPerPage = 10;
@@ -14,7 +16,7 @@ const Report = () => {
 
   const indexOfLastItem = (currentPage + 1) * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].slice(
+  const currentItems = reportData.slice(
     indexOfFirstItem,
     indexOfLastItem
   );
@@ -65,6 +67,7 @@ const Report = () => {
                     <th className="p-3">Employer Address</th>
                     <th className="p-3">Repayment Status</th>
                     <th className="p-3">Loan Amount</th>
+                    <th className="p-3">Due Date</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -75,12 +78,13 @@ const Report = () => {
                         index % 2 === 0 ? "bg-[#0f0f0f4f]" : "bg-[#1f1f1f48]"
                       } `}
                     >
-                      <td className="p-3">{item}</td>
-                      <td className="p-3">{item}</td>
-                      <td className="p-3">{item}</td>
-                      <td className="p-3">{item}</td>
-                      <td className="p-3">{item}</td>
-                      <td className="p-3">{item}</td>
+                      <td className="p-3">{item.UserName}</td>
+                      <td className="p-3">{item.UserAddress}</td>
+                      <td className="p-3">{item.EmployerName}</td>
+                      <td className="p-3">{item.EmployerAddress}</td>
+                      <td className="p-3">{item.RepaymentStatus}</td>
+                      <td className="p-3">{item.LoanAmount}</td>
+                      <td className="p-3">{item.DueDate}</td>
                     </tr>
                   ))}
                 </tbody>

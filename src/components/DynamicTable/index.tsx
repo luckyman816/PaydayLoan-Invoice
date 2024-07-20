@@ -44,13 +44,16 @@ const DynamicTable: React.FC = () => {
                     ID
                   </th>
                   <th className="px-6 py-6 text-left font-medium text-white uppercase tracking-wider">
-                    User's Name
+                    User Name
                   </th>
                   <th className="px-6 py-6 text-left font-medium text-white uppercase tracking-wider">
                     Address
                   </th>
                   <th className="px-6 py-6 text-left font-medium text-white uppercase tracking-wider">
                     loan amount
+                  </th>
+                  <th className="px-6 py-6 text-left font-medium text-white uppercase tracking-wider">
+                    Contract Duration
                   </th>
                   <th className="px-6 py-6 text-left font-medium text-white uppercase tracking-wider">
                     Commitment Status
@@ -86,6 +89,9 @@ const DynamicTable: React.FC = () => {
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-white">
                         {row.loanAmount}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-white">
+                        {row.duration}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-white">
                         {row.commitmentStatus}

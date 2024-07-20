@@ -10,18 +10,18 @@ const Login = () => {
   
   return (
     <div className="flex-grow flex justify-center w-[100vw] h-[80vh] items-center gap-8 ">
-      <div className="border border-[#e2e2e2] dark:border-[#1c1c1c] rounded-2xl py-10 px-12 flex flex-col justify-start items-start gap-7">
+      <div className="border border-[#e2e2e2] dark:border-[#1c1c1c] rounded-2xl py-10 px-12 flex flex-col justify-start items-start gap-7 w-[600px] md:w-[40%]">
         {/* <h1 className="text-3xl text-white">Login</h1> */}
         <h1 className="text-3xl text-white" style={{ fontFamily:"medium"}}>Login</h1>
         <input
           type="email"
-          className="bg-transparent rounded-[8px] text-[white] w-[20vw]"
+          className="bg-transparent rounded-[8px] text-[white] w-full"
           style={{ fontFamily:"medium"}}
           placeholder="Enter Your Email"
         />
         <input
           type="password"
-          className="bg-transparent rounded-[8px] text-[white] w-[20vw]"
+          className="bg-transparent rounded-[8px] text-[white] w-full"
           style={{ fontFamily:"medium"}}
           placeholder="Enter Your Password"
         />
