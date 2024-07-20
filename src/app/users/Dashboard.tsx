@@ -2,10 +2,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
+import dashdata from './dashdata.json';
 
 const FIELD = [
   "Employer name",
-  "User name",
   "Loan amount",
   "Interest rate",
   "Repayment period",
@@ -26,7 +26,7 @@ const Dashboard = () => {
 
   const indexOfLastItem = (currentPage + 1) * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].slice(
+  const currentItems = dashdata.slice(
     indexOfFirstItem,
     indexOfLastItem
   );
@@ -68,14 +68,13 @@ const Dashboard = () => {
                 className={index % 2 ? "bg-[rgba(255,255,255,0.02)]" : ""}
                 key={index}
               >
-                <td className="text-center p-3 text-[#DDD]">{item}</td>
-                <td className="text-center p-3 text-[#DDD]">{item}</td>
-                <td className="text-center p-3 text-[#DDD]">{item}</td>
-                <td className="text-center p-3 text-[#DDD]">{item}</td>
-                <td className="text-center p-3 text-[#DDD]">{item}</td>
-                <td className="text-center p-3 text-[#DDD]">{item}</td>
-                <td className="text-center p-3 text-[#DDD]">{item}</td>
-                <td className="text-center p-3 text-[#DDD]">{item}</td>
+                <td className="text-center p-3 text-[#DDD]">{item.EmployerName}</td>
+                <td className="text-center p-3 text-[#DDD]">{item.LoanAmount}</td>
+                <td className="text-center p-3 text-[#DDD]">{item.InterestRate}</td>
+                <td className="text-center p-3 text-[#DDD]">{item.RepaymentPeriod}</td>
+                <td className="text-center p-3 text-[#DDD]">{item.MonthlyNetSalary}</td>
+                <td className="text-center p-3 text-[#DDD]">{item.MonthlyInstallments}</td>
+                <td className="text-center p-3 text-[#DDD]">{item.TotalAmount}</td>
               </tr>
             ))}
             </tbody>

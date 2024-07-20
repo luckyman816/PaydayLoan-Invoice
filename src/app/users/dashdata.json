@@ -1,137 +1,137 @@
 [
     {
-        "Employer Name": "ABC Company",
-        "Loan Amount": "$10000",
-        "Interest Rate": "5%",
-        "Repayment Period": "12 months",
-        "Monthly Net Salary": "$3000",
-        "Monthly Installments": "$900",
-        "Total Amount": "$10800"
+        "EmployerName": "ABC Company",
+        "LoanAmount": "$10000",
+        "InterestRate": "5%",
+        "RepaymentPeriod": "12 months",
+        "MonthlyNetSalary": "$3000",
+        "MonthlyInstallments": "$900",
+        "TotalAmount": "$10800"
     },
     {
-        "Employer Name": "XYZ Corporation",
-        "Loan Amount": "$15000",
-        "Interest Rate": "6%",
-        "Repayment Period": "24 months",
-        "Monthly Net Salary": "$4000",
-        "Monthly Installments": "$750",
-        "Total Amount": "$18000"
+        "EmployerName": "XYZ Corporation",
+        "LoanAmount": "$15000",
+        "InterestRate": "6%",
+        "RepaymentPeriod": "24 months",
+        "MonthlyNetSalary": "$4000",
+        "MonthlyInstallments": "$750",
+        "TotalAmount": "$18000"
     },
     {
-        "Employer Name": "123 Industries",
-        "Loan Amount": "$12000",
-        "Interest Rate": "4%",
-        "Repayment Period": "18 months",
-        "Monthly Net Salary": "$3500",
-        "Monthly Installments": "$700",
-        "Total Amount": "$12600"
+        "EmployerName": "123 Industries",
+        "LoanAmount": "$12000",
+        "InterestRate": "4%",
+        "RepaymentPeriod": "18 months",
+        "MonthlyNetSalary": "$3500",
+        "MonthlyInstallments": "$700",
+        "TotalAmount": "$12600"
     },
     {
-        "Employer Name": "Tech Solutions",
-        "Loan Amount": "$8000",
-        "Interest Rate": "3.5%",
-        "Repayment Period": "15 months",
-        "Monthly Net Salary": "$2800",
-        "Monthly Installments": "$600",
-        "Total Amount": "$9000"
+        "EmployerName": "Tech Solutions",
+        "LoanAmount": "$8000",
+        "InterestRate": "3.5%",
+        "RepaymentPeriod": "15 months",
+        "MonthlyNetSalary": "$2800",
+        "MonthlyInstallments": "$600",
+        "TotalAmount": "$9000"
     },
     {
-        "Employer Name": "Sunshine Corp",
-        "Loan Amount": "$11000",
-        "Interest Rate": "4.5%",
-        "Repayment Period": "18 months",
-        "Monthly Net Salary": "$3200",
-        "Monthly Installments": "$700",
-        "Total Amount": "$12600"
+        "EmployerName": "Sunshine Corp",
+        "LoanAmount": "$11000",
+        "InterestRate": "4.5%",
+        "RepaymentPeriod": "18 months",
+        "MonthlyNetSalary": "$3200",
+        "MonthlyInstallments": "$700",
+        "TotalAmount": "$12600"
     },
     {
-        "Employer Name": "Blue Co.",
-        "Loan Amount": "$13500",
-        "Interest Rate": "5.5%",
-        "Repayment Period": "24 months",
-        "Monthly Net Salary": "$3800",
-        "Monthly Installments": "$800",
-        "Total Amount": "$19200"
+        "EmployerName": "Blue Co.",
+        "LoanAmount": "$13500",
+        "InterestRate": "5.5%",
+        "RepaymentPeriod": "24 months",
+        "MonthlyNetSalary": "$3800",
+        "MonthlyInstallments": "$800",
+        "TotalAmount": "$19200"
     },
     {
-        "Employer Name": "Green Solutions",
-        "Loan Amount": "$9500",
-        "Interest Rate": "4.2%",
-        "Repayment Period": "12 months",
-        "Monthly Net Salary": "$2900",
-        "Monthly Installments": "$750",
-        "Total Amount": "$9000"
+        "EmployerName": "Green Solutions",
+        "LoanAmount": "$9500",
+        "InterestRate": "4.2%",
+        "RepaymentPeriod": "12 months",
+        "MonthlyNetSalary": "$2900",
+        "MonthlyInstallments": "$750",
+        "TotalAmount": "$9000"
     },
     {
-        "Employer Name": "Silver Enterprises",
-        "Loan Amount": "$12500",
-        "Interest Rate": "5%",
-        "Repayment Period": "18 months",
-        "Monthly Net Salary": "$3600",
-        "Monthly Installments": "$700",
-        "Total Amount": "$12600"
+        "EmployerName": "Silver Enterprises",
+        "LoanAmount": "$12500",
+        "InterestRate": "5%",
+        "RepaymentPeriod": "18 months",
+        "MonthlyNetSalary": "$3600",
+        "MonthlyInstallments": "$700",
+        "TotalAmount": "$12600"
     },
     {
-        "Employer Name": "Golden Technologies",
-        "Loan Amount": "$14000",
-        "Interest Rate": "6%",
-        "Repayment Period": "24 months",
-        "Monthly Net Salary": "$4200",
-        "Monthly Installments": "$800",
-        "Total Amount": "$19200"
+        "EmployerName": "Golden Technologies",
+        "LoanAmount": "$14000",
+        "InterestRate": "6%",
+        "RepaymentPeriod": "24 months",
+        "MonthlyNetSalary": "$4200",
+        "MonthlyInstallments": "$800",
+        "TotalAmount": "$19200"
     },
     {
-        "Employer Name": "Dynamic Innovations",
-        "Loan Amount": "$11500",
-        "Interest Rate": "4.8%",
-        "Repayment Period": "15 months",
-        "Monthly Net Salary": "$3300",
-        "Monthly Installments": "$700",
-        "Total Amount": "$10500"
+        "EmployerName": "Dynamic Innovations",
+        "LoanAmount": "$11500",
+        "InterestRate": "4.8%",
+        "RepaymentPeriod": "15 months",
+        "MonthlyNetSalary": "$3300",
+        "MonthlyInstallments": "$700",
+        "TotalAmount": "$10500"
     },
     {
-        "Employer Name": "Innovate Co.",
-        "Loan Amount": "$9500",
-        "Interest Rate": "4.2%",
-        "Repayment Period": "12 months",
-        "Monthly Net Salary": "$2900",
-        "Monthly Installments": "$750",
-        "Total Amount": "$9000"
+        "EmployerName": "Innovate Co.",
+        "LoanAmount": "$9500",
+        "InterestRate": "4.2%",
+        "RepaymentPeriod": "12 months",
+        "MonthlyNetSalary": "$2900",
+        "MonthlyInstallments": "$750",
+        "TotalAmount": "$9000"
     },
     {
-        "Employer Name": "Tech Solutions",
-        "Loan Amount": "$8000",
-        "Interest Rate": "3.5%",
-        "Repayment Period": "15 months",
-        "Monthly Net Salary": "$2800",
-        "Monthly Installments": "$600",
-        "Total Amount": "$9000"
+        "EmployerName": "Tech Solutions",
+        "LoanAmount": "$8000",
+        "InterestRate": "3.5%",
+        "RepaymentPeriod": "15 months",
+        "MonthlyNetSalary": "$2800",
+        "MonthlyInstallments": "$600",
+        "TotalAmount": "$9000"
     },
     {
-        "Employer Name": "Sunshine Corp",
-        "Loan Amount": "$11000",
-        "Interest Rate": "4.5%",
-        "Repayment Period": "18 months",
-        "Monthly Net Salary": "$3200",
-        "Monthly Installments": "$700",
-        "Total Amount": "$12600"
+        "EmployerName": "Sunshine Corp",
+        "LoanAmount": "$11000",
+        "InterestRate": "4.5%",
+        "RepaymentPeriod": "18 months",
+        "MonthlyNetSalary": "$3200",
+        "MonthlyInstallments": "$700",
+        "TotalAmount": "$12600"
     },
     {
-        "Employer Name": "Blue Co.",
-        "Loan Amount": "$13500",
-        "Interest Rate": "5.5%",
-        "Repayment Period": "24 months",
-        "Monthly Net Salary": "$3800",
-        "Monthly Installments": "$800",
-        "Total Amount": "$19200"
+        "EmployerName": "Blue Co.",
+        "LoanAmount": "$13500",
+        "InterestRate": "5.5%",
+        "RepaymentPeriod": "24 months",
+        "MonthlyNetSalary": "$3800",
+        "MonthlyInstallments": "$800",
+        "TotalAmount": "$19200"
     },
     {
-        "Employer Name": "Green Solutions",
-        "Loan Amount": "$9500",
-        "Interest Rate": "4.2%",
-        "Repayment Period": "12 months",
-        "Monthly Net Salary": "$2900",
-        "Monthly Installments": "$750",
-        "Total Amount": "$9000"
+        "EmployerName": "Green Solutions",
+        "LoanAmount": "$9500",
+        "InterestRate": "4.2%",
+        "RepaymentPeriod": "12 months",
+        "MonthlyNetSalary": "$2900",
+        "MonthlyInstallments": "$750",
+        "TotalAmount": "$9000"
     }
 ]

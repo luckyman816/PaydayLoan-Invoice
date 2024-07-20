@@ -2,14 +2,8 @@
 "use client";
 import { useState } from "react";
 import React from "react";
-import { useRouter } from "next/navigation";
-
-const companyData = [
-  "Tesla","Apple", "Microsoft","Google","Facebook","Amazon","Netflix","Airbnb","Paypal","Cruise","Spotify","Slack","Dropbox","Coinbase","Payoneer"
-]
 
 const Manage = () => {
-  const router = useRouter();
   const [companyName, setCompanyName] = useState("Google");
   const [email, setEmail] = useState("John@set.com");
   const [password, setPassword] = useState("");

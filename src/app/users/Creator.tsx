@@ -1,9 +1,12 @@
 'use client'
-import React from 'react';
+import React,{useState} from 'react';
 
 const Creator = () => {
+
+    const [period, setPeriod] = useState<number>(0);
+
     return (
-        <div className='flex flex-col gap-5 mt-8 w-full'  style={{ fontFamily:"medium"}}>
+        <div className='flex flex-col gap-5 mt-8 w-full' style={{ fontFamily: "medium" }}>
             <div className='flex small-screen-col gap-4 w-full'>
                 <div className='flex flex-col gap-3 transition-all w-1/2 small-screen-full'>
                     <fieldset className=' border border-[#777] p-4 rounded-lg shadow-md bg-[rgba(255,255,255,0.1)]'>
@@ -17,13 +20,23 @@ const Creator = () => {
                                     </div>
                                     <div className='flex flex-col'>
                                         <label className=' mr-2'> Interest rate</label>
-                                        <input type='text' className=' outline-none rounded-md text-[#DDD] bg-transparent border-none w-full' placeholder='89%' />
+                                        <input type='text' className=' outline-none rounded-md text-[#DDD] bg-transparent border-none w-full' placeholder='3 month' disabled value={period===15?"1 %":(period===30?"10%":"50%")}/>
                                     </div>
                                 </div>
                                 <div className=' flex flex-col small-screen-dir'>
                                     <div className='flex flex-col'>
                                         <label className=' mr-2'>Repayment period</label>
-                                        <input type='text' className=' outline-none rounded-md text-[#DDD] bg-transparent border-none w-full' placeholder='3 month' />
+                                        <select className="bg-transparent rounded-[8px] text-[white] w-full outline-none" onChange={(e) => setPeriod(parseInt(e.target.value))}>
+                                            <option value="15" className=" bg-black p-2">
+                                                15 days
+                                            </option>
+                                            <option value="30" className=" bg-black">
+                                                30 days
+                                            </option>
+                                            <option value="60" className=" bg-black">
+                                                60 days
+                                            </option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +95,7 @@ const Creator = () => {
                                         <input type='text' className=' outline-none rounded-md text-[#DDD] bg-transparent border-none w-full' placeholder='New York 145 Main St' />
                                     </div>
                                     <div className='flex flex-col'>
-                                        <label className=' mr-2'>Duration of Dmployment Dontract</label>
+                                        <label className=' mr-2'>Duration of Dmployment Contract</label>
                                         <input type='text' className=' outline-none rounded-md text-[#DDD] bg-transparent border-none w-full' placeholder='6 month' />
                                     </div>
                                 </div>
@@ -98,14 +111,14 @@ const Creator = () => {
                                         <label className=' mr-2'>Monthly installments</label>
                                         <input type='text' className=' outline-none rounded-md text-[#DDD] bg-transparent border-none w-full' placeholder='Loan' />
                                     </div>
-                                    
+
                                 </div>
                                 <div className=' flex flex-col small-screen-dir'>
                                     <div className='flex flex-col'>
                                         <label className=' mr-2'>Due dates</label>
                                         <input type='text' className=' outline-none rounded-md text-[#DDD] bg-transparent border-none w-full' placeholder='/10/18/2024' />
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
