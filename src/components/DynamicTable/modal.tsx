@@ -77,7 +77,7 @@ const Modal: React.FC<ModalProps> = ({ showModal, setShowModal, data }) => {
               
                 <div className="flex flex-row w-full mt-3 mb-3 items-center  text-center sm:ml-4 sm:mt-0 sm:text-left ">
                         {/* <div className=""></div> */}
-                        <h3 className="text-base font-semibold leading-6 text-gray-900 w-[65%]" id="modal-title">User's Name:</h3>
+                        <h3 className="text-base font-semibold leading-6 text-gray-900 w-[65%]" id="modal-title">User&#96;s Name:</h3>
                         <p className="text-sm text-gray-500 ml-5">{data.Users_Name}</p>
                 </div>
                 <div className="flex flex-row w-full mt-3 mb-3 items-center  text-center sm:ml-4 sm:mt-0 sm:text-left ">
