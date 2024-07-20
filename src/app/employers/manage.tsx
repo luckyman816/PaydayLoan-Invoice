@@ -54,32 +54,8 @@ const Manage = () => {
         </div>
         <div className="flex justify-center items-center w-full">
           <button className="bg-gradient-to-r from-[#5238e8] to-[#200072] rounded-[10px] text-[white] w-[100%] h-[5vh]  hover:bg-[#0F977E]">
-            Update Datas
+            Update
           </button>
-        </div>
-        <div className="flex justify-center items-center gap-2 w-full">
-          <div className="border-b border-[grey] w-[8vw]"></div>
-          <div className="text-[grey]">Or</div>
-          <div className="border-b border-[grey] w-[8vw]"></div>
-        </div>
-        <div className="flex justify-center w-[100%]">
-          <div className="flex flex-row justify-between w-[120px]">
-            <img
-              src="/images/third-party/devicon_google.png"
-              alt="Google"
-              className="w-[30px] h-[30px] hover:cursor-pointer hover:scale-[1.15] transition duration-100"
-            />
-            <img
-              src="/images/third-party/logos_facebook.png"
-              alt="Facebook"
-              className="w-[30px] h-[30px] hover:cursor-pointer hover:scale-[1.15] transition duration-100"
-            />
-            <img
-              src="/images/third-party/logos_twitter.png"
-              alt="Google"
-              className="w-[30px] h-[30px] hover:cursor-pointer hover:scale-[1.15] transition duration-100"
-            />
-          </div>
         </div>
       </div>
     </div>
