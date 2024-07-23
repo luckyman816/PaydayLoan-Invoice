@@ -27,7 +27,7 @@ const Home = () => {
         </p>
         <div className="flex gap-6 justify-center items-center pt-6">
           <button className="bg-[#1C64F1] rounded-[20px] text-white w-[150px] h-[4vh] border border-[white] hover:bg-[#0F977E]" onClick={handleStart}>
-            Get Started
+            Login
           </button>
           <button className="bg-[#8BA2F9] rounded-[20px] text-[white] w-[150px] h-[4vh] border border-[white] hover:bg-[#0F977E]" onClick={handleSignup}>
             Register
