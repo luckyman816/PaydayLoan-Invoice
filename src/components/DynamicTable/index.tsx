@@ -99,17 +99,17 @@ const DynamicTable: React.FC = () => {
                       <td className="px-6 py-4 whitespace-nowrap text-white">
                         {row.notification ? (
                           row.notification == 1 ? (
-                            <div className={`ml-5 text-xl`}>👍</div>
+                            <div className={`ml-5 text-xl`}>Active</div>
                           ) : (
-                            <div className={`ml-5 text-xl`}>🚫</div>
+                            <div className={`ml-5 text-xl`}>Inactive</div>
                           )
                         ) : (
-                          <div className={`ml-5 text-xl`}>⏳</div>
+                          <div className={`ml-5 text-xl`}>Active</div>
                         )}
                       </td>
                     </tr>
                   </>
-                  // ✅💚🚫⏳👌👍
+                  // 
                 ))}
               </tbody>
             </table>
